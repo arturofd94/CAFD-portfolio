@@ -1,0 +1,93 @@
+:root {
+    --red-color: #ea4a55
+}
+
+.form_container {
+    margin: 10px 15px;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form_container h1 {
+    color: var(--red-color);
+    margin-bottom: 15px;
+    animation-name: moveUp;
+    animation-duration: 1.4s;
+}
+
+.form_email {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form_email label {
+    color: white;
+    font-weight: 800;
+    animation-name: moveUp;
+    animation-duration: 1.4s;
+}
+
+.form_email .form_input {
+    border-radius: 5px;
+    background: #8080801c;
+    border: none;
+    color: white;
+    box-shadow: 3px 3px 6px #ffffff59;
+    animation-name: moveUp;
+    animation-duration: 1.4s;
+}
+
+.btn {
+    margin-top: 10px;
+    border-radius: 5px;
+    background: #fdfdfd52;
+    border: none;
+    color: white;
+    padding: 8px;
+    box-shadow: 3px 3px 6px #ffffff59;
+    animation-name: moveUp;
+    animation-duration: 1.4s;
+}
+
+.sent_container {
+    animation-name: moveUp;
+    animation-duration: 1.4s;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sent_container h1 {
+    color: var(--red-color);
+    margin-bottom: 35px;
+    animation-name: moveUp;
+    animation-duration: 1.4s;
+}
+
+.sent_container h1 i {
+    color: green;
+}
+
+.sent_container .btn {
+    padding: 8px;
+    animation-name: moveUp;
+    animation-duration: 1.4s;
+}
+
+@keyframes moveUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
